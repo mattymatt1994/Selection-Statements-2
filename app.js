@@ -72,40 +72,52 @@ switch (typeId) {
     break;
 }
 
-if (typeId == "01") {
-  type = "Tank top";
-} else if (typeId == "02") {
-  type = "T-Shirt";
-} else if (typeId == "03") {
-  type = "Long Sleeve";
-} else if (typeId == "04") {
-  type == "Sweat Shirt";
-} else {
-  type = "Other";
+// if (typeId) {
+//   type = "Tank top";
+// } else if (typeId == "02") {
+//   type = "T-Shirt";
+// } else if (typeId == "03") {
+//   type = "Long Sleeve";
+// } else if (typeId == "04") {
+//   type == "Sweat Shirt";
+// } else {
+//   type = "Other";
+// }
+
+switch (colorId) {
+  case "BK":
+    color = "Black";
+    break;
+  case "BL":
+    color = "Blue";
+    break;
+  case "RD":
+    color = "Red";
+    break;
+  case "PU":
+    color = "Purple";
+    break;
+  default:
+    color = "White";
+    break;
 }
 
-if (colorId == "BK") {
-  color = "Black";
-} else if (colorId == "BL") {
-  color = "Blue";
-} else if (colorId == "RD") {
-  color = "Red";
-} else if (colorId == "PU") {
-  color = "Purple";
-} else {
-  color = "White";
-}
-
-if (sizeId == "S") {
-  size = "Small";
-} else if (sizeId == "M") {
-  size = "Medium";
-} else if (sizeId == "L") {
-  size = "Large";
-} else if (sizeId == "XL") {
-  size = "Extra Large";
-} else {
-  size = "One Size Fits All";
+switch (sizeId) {
+  case "S":
+    size = "Small";
+    break;
+  case "M":
+    size = "Medium";
+    break;
+  case "L":
+    size = "Large";
+    break;
+  case "XL":
+    size = "Extra Large";
+    break;
+  default:
+    size = "One Size Fits All";
+    break;
 }
 
 console.log(`Product: ${size} ${color} ${type}`);
